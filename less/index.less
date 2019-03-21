@@ -54,6 +54,142 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+}
+.container{
+	max-width: 95%;
+  	margin: 0 auto;
+	font-size: 1.6rem; 
+	font-family:'Roboto', sans-serif; 
 }
 
+@background:#008cff;
+
+h1 {
+	font-size: 3.6rem;
+	font-weight: 700;
+}
+h2 {
+	font-size: 2.4rem;
+	font-weight: 500;
+}
+
+// progress {
+// 	margin-left:30px;
+// 	border: none;
+//     width: 93%;
+//     height: 20px;
+//     background:green;
+// 	margin-bottom: 10px;
+// }
+// progress::-webkit-progress-value {
+// 	background:@background;
+// }
+
+progress {
+    border: none;
+    width: 100%;
+    height: 20px;
+    background: crimson;
+    margin-bottom: 10px;
+}
+
+progress::-webkit-progress-value {
+    background: @background;
+}
+
+progress::-moz-progress-bar {
+    background: red;
+}
+
+.nav_section{
+	// display:flex;
+	// justify-content: center;
+	// align-items:flex-end;
+	max-width: 90%;
+	background-color: @background;
+	border: 1px solid red;
+
+nav {
+	display:flex;
+	justify-content: space-around;
+	padding: 1rem 2rem;
+
+a {
+	font-family:'Roboto', sans-serif;
+	// align-items:flex-end;
+	// text-align: center;
+	margin-left: 20px;
+	font-size: 1.8rem;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase
+	// float: right;	
+	}
+}
+}
+
+img {
+	border-radius: 50%;
+    padding-bottom: 25px;
+    width: 500px;
+    height: auto;
+    min-width: 175px;
+	// width: 300px;
+	// height: auto;
+	// margin-top:30px;
+}
+.Intro_container{
+	max-width: 90%;
+	border: 1px solid green;
+	background-color:lightgrey;
+}
+
+.Intro {
+	border: 1px solid red;
+	margin-top:30px;
+	margin-left: 15px;
+
+h1 {
+	margin-bottom:20px;
+}
+p {
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+button {
+	margin-bottom:40px;
+}
+}
+
+.middle_container{
+	max-width: 90%;
+	flex-wrap: wrap;
+	border: 1px solid blue;
+	margin-top:30px;
+	display:flex;
+ 
+.middle_left{
+	border: 1px solid green;
+	width: 50%;
+}
+
+.middle_right{
+	border: 1px solid red;
+	width: 50%;
+}
+}
+table, th, td {
+	max-width: 90%;
+	// display:flex;
+    border: 1px solid black;
+    border-collapse: collapse;
+//     padding: 15px;
+    text-align: left;
+// 	border-spacing: 5px;
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+}
